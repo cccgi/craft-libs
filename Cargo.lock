@@ -2132,6 +2132,17 @@ dependencies = [
 ]
 
 [[package]]
+name = "craft-raw-denoise"
+version = "0.1.0"
+dependencies = [
+ "rayon",
+ "serde",
+ "serde_json",
+ "thiserror 2.0.21",
+ "web-time",
+]
+
+[[package]]
 name = "craft-rtf"
 version = "0.1.0"
 dependencies = [

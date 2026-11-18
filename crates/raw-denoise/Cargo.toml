@@ -1,0 +1,21 @@
+[package]
+name = "craft-raw-denoise"
+description = "Model-free raw denoiser: block matching on the variance-stabilised Bayer mosaic with the photo's own noise level, edge-directed demosaic, optional light non-local-means pass; also for developed pictures of one to four channels."
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+repository.workspace = true
+
+[lints]
+workspace = true
+
+[dependencies]
+rayon = { workspace = true }
+serde = { workspace = true }
+thiserror = { workspace = true }
+# Timing of the tile loop for an app's profiling output; std's clock panics on wasm32-unknown-unknown.
+web-time = "1"
+
+[dev-dependencies]
+serde_json = { workspace = true }
